@@ -20,26 +20,6 @@ import circlesImage from '../imgs/circles.png'
 
 */
 class Card extends React.Component {
-
-    constructor(props){
-        super(props)
-        //estado inicial del componente
-        this.state={
-            image:'https://depor.com/resizer/4LiA3UcZpkTbq0pGF8j9dPiahkw=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6Y2EDIISGFGVFANEVDCR5LCG34.jpg'
-        }
-    }
-
-    //se ejecuta inmediatamente despues de que un componente se monte o cargue
-    componentDidMount(){
-
-        //cambiar la info del estado a los 5 segundos del montado
-        setTimeout(()=>{
-            this.setState({
-                image:'https://www.latercera.com/resizer/m0DgLUbDGcncxl2kINMzdbTCJ28=/900x600/filters:focal(369x167:379x157)/cloudfront-us-east-1.images.arcpublishing.com/copesa/ALGBWONLONE45D2PFD6PEYKVOI.jpg'
-            })
-        }, 5000)
-    }
-
     //pinta lo que definimos dentro de la funcion
     render() {
 
@@ -55,7 +35,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="float-right mediana"/>
+                            <img src={img} className="float-right mediana"/>
                         </div>
                         <div className="col-6 Halo-Card-Info">
                             <h1>{title}</h1>
