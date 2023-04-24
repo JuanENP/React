@@ -1,0 +1,5 @@
+Comentar varias líneas
+ctrl + k + c
+
+Descomentar varias lineas
+ctrl+k+u
